@@ -31,6 +31,7 @@
         background-color: rgba(243, 242, 234, 1);
         color: rgba(158, 73, 79, 1);
         border: 2px solid rgba(158, 73, 79, 1);
+        cursor: pointer;
     }
     .categories-wrapper{
         display: flex;
@@ -40,7 +41,7 @@
 
     .single-category-h2{
         margin: auto;
-        color: rgba(43, 54, 28, 1)
+        color: rgba(43, 54, 28, 1);
     }
     .category-img-wrapper{
         max-width: 700px;

@@ -1,14 +1,44 @@
 <template>
-    <div>
-        
+    
+    <div class="filter-section">
+        <h3>Filter</h3>
+        <div class="filter-option">
+            <div class="filter-btn">All</div>
+            <div class="filter-btn">Bedroom</div>
+            <div class="filter-btn">Kitchen</div>
+            <div class="filter-btn">Electrical</div>
+            <div class="filter-btn">Outdoor</div>
+            <div class="filter-btn">Travel</div>
+        </div>
+    </div>
+
+    <div class="products-section">
+        <h3>Sort by:</h3>
+        <select name="filter-options" id="shopping">
+            <option value="a-z">Alphabetically: A-Z</option>
+            <option value="z-a">Alphabetically: Z-A</option>
+            <option value="low-high">Price: Low to high</option>
+            <option value="high-low">Price: High to low</option>
+        </select>
     </div>
 </template>
 
+<style scoped>
+    .filter-btn{
+        margin: 20px 0;
+        padding: 10px 20px;
+        border: 2px solid rgba(43, 54, 28, 1);
+        border-radius: 5px;
+    }
+
+    .filter-btn:hover{
+        background-color: rgba(43, 54, 28, 1);
+        color: rgba(243, 242, 234, 1);
+        cursor: pointer;
+    }
+
+</style>
+
 <script>
-   // defineProps({
-   //  article_array: { 
-   //     type: Array, 
-   //     required: true
-   //   },
-   // });
+
 </script>

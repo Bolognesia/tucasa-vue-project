@@ -35,7 +35,10 @@
       <br>
     </div>
 
-    <MainVue />
+    <div class="main-shop-section">
+      <MainVue />
+    </div>
+
   </div>
   
 </template>
@@ -57,9 +60,10 @@ hr{
   border: 1px solid rgba(158, 73, 79, 1);
 }
 
-
-
-
+.main-shop-section{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
