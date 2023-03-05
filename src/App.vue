@@ -110,13 +110,13 @@ hr{
             description: 'Eye catching abstract leaves extend over the Ramao Duvet Cover Set. Featuring watercolour brush strokes of lush colour hand painted by KAS artists in their Sydney studio. The rich palette of colours combines harmoniously with the coordinating plain dyed reverse. ',
           },
 
-          // {
-          //   name:'',
-          //   img: '',
-          //   category: '',
-          //   price: '',
-          //   description: '',
-          // },
+          {
+            name:'Galaxy 1000GSM Microfibre Mattress Topper',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1098416/1098416_default_1.jpg/CatalogContentDetails-768615-600-600-75-0,0',
+            category: 'Bedding',
+            price: 80,
+            description: 'The ultimate in microfibre comfort. For a cloud like nights sleep this topper will not disappoint with its lofty cushion of comfort that will leave you waking refreshed in the morning.',
+          },
 
           // {
           //   name:'',
