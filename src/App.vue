@@ -38,7 +38,6 @@
     <div class="main-shop-section">
       <MainVue 
       :products_prop_array="products_array"
-
       />
     </div>
 
@@ -65,7 +64,7 @@ hr{
 
 .main-shop-section{
   display: flex;
-  /* justify-content: space-between; */
+  
 }
 
 

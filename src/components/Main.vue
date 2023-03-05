@@ -30,6 +30,9 @@
 </template>
 
 <style scoped>
+    .main-products-wrapper{
+        display: flex;
+    }
     .filter-btn{
         margin: 20px 0;
         padding: 10px 20px;
