@@ -36,7 +36,10 @@
     </div>
 
     <div class="main-shop-section">
-      <MainVue />
+      <MainVue 
+      :products_prop_array="products_array"
+
+      />
     </div>
 
   </div>
@@ -62,7 +65,7 @@ hr{
 
 .main-shop-section{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 
@@ -92,76 +95,76 @@ hr{
 
         products_array:[
           {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
+            name:'June & Jupiter Belle Quilted Duvet Cover Set',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1103657001/1103657001_default_1.jpg/CatalogContentDetails-1282347-600-600-75-0,0',
+            category: 'Bedding',
+            price: 165,
+            description: 'The Belle Quilted Duvet Cover Set by June & Jupiter showcases a beautiful flora design on stonewashed cotton. This Duvet Cover Set features both functionality and beauty. Evoking feelings of warmth and comfort, this duvet cover will effortlessly bring a peaceful style to your bedroom.',
           },
 
           {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
+            name:'KAS Ramao Light Duvet Cover Set',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1099571/1099571_default_1.jpg/CatalogContentDetails-1015417-600-600-75-0,0',
+            category: 'Bedding',
+            price: 130,
+            description: 'Eye catching abstract leaves extend over the Ramao Duvet Cover Set. Featuring watercolour brush strokes of lush colour hand painted by KAS artists in their Sydney studio. The rich palette of colours combines harmoniously with the coordinating plain dyed reverse. ',
           },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          },
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          },
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          },
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          },
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          },
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          },
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // },
 
-          {
-            name:'',
-            img: '',
-            category: '',
-            price: '',
-            description: '',
-          }
+          // {
+          //   name:'',
+          //   img: '',
+          //   category: '',
+          //   price: '',
+          //   description: '',
+          // }
 
         ],
       }

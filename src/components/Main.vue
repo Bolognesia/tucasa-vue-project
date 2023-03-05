@@ -1,5 +1,4 @@
 <template>
-    
     <div class="filter-section">
         <h3>Filter</h3>
         <div class="filter-option">
@@ -20,6 +19,13 @@
             <option value="low-high">Price: Low to high</option>
             <option value="high-low">Price: High to low</option>
         </select>
+
+        <div class="main-products-wrapper">
+            <ProductVue 
+            v-for="product in products_prop_array"
+            :single_product_obj="product"
+            />
+        </div>
     </div>
 </template>
 
@@ -37,8 +43,30 @@
         cursor: pointer;
     }
 
+    .filterON{
+        background-color: rgba(43, 54, 28, 1);
+        color: rgba(243, 242, 234, 1);
+        
+    }
+
+    .products-section{
+        margin-left: 100px;
+    }
+
 </style>
 
+<script setup>
+    import ProductVue from './Product.vue'
+
+    defineProps({
+    products_prop_array: { 
+        type: Array, 
+        required: true
+        },
+    });
+</script>
+
 <script>
+
 
 </script>
