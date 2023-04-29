@@ -71,6 +71,33 @@
 </script>
 
 <script>
+    export default {
+        data(){
+            return{
+                sortby: 'a-z'
+            }
+        },
 
+        computed: {
+            sortedProducts(){
+                return this.products_prop_array.product.sort((a,b) =>{
+                    const nameA = a.products_prop_array.product.name.toUpperCase();
+                    const nameB = b.products_prop_array.product.name.toUpperCase();
+
+                    if(nameA < nameB){
+                        return -1;
+                    }
+
+                    if (nameA > nameB){
+                        return 1;
+                    }
+
+                    return 0
+                    }
+                )
+            }
+        },
+
+}
 
 </script>
