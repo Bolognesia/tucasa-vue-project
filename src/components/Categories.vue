@@ -3,7 +3,6 @@
         <div class="categories-wrapper">
             <div class="category-img-wrapper">
                 <img :src="single_category_obj.category_img" alt="" class="category_img">
-                
             </div>
             <div class="shop-now-btn">Shop Now</div>
             <h2 class="single-category-h2">{{ single_category_obj.category_name }}</h2>
@@ -17,12 +16,12 @@
         color: rgba(243, 242, 234, 1);
         font-family: 'Lato', sans-serif;
         padding: 15px 30px;
-        max-width: 80px;
+        width: clamp(20px, 50vw, 80px);
         text-align: center;
         border-radius: 5px;
         position: absolute;
-        bottom: 80px;
-        left: 40px;
+        bottom: 25%;
+        left: 10%;
         font-size: 17px;
         
     }
@@ -64,6 +63,8 @@
         cursor: pointer;
         
     }
+
+
 </style>
     
 <script setup>

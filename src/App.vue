@@ -67,8 +67,13 @@ hr{
   
 }
 
-
-
+  @media (max-width: 1000px){
+          .categories-flex{
+              display: flex;
+              flex-direction: column;
+              background-color: blue;
+          }
+    }
 </style>
 
 <script>

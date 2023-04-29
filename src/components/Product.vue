@@ -9,7 +9,6 @@
             <h3><span>$</span>{{ single_product_obj.price }}</h3>
             <p>{{ single_product_obj.description }}</p>
         </div>
-        
     </div>
 </template>
 
@@ -31,12 +30,12 @@
         color: rgba(243, 242, 234, 1);
         font-family: 'Lato', sans-serif;
         padding: 15px 40px;
-        max-width: 80px;
+        width: clamp(30px, 50vw, 80px);
         text-align: center;
         border-radius: 5px;
         position: absolute;
-        bottom: 60px;
-        left: 40px;
+        bottom: 40%;
+        left: 25%;
         font-size: 17px;
         white-space: nowrap;
         overflow: hidden;

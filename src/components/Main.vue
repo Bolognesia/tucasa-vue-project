@@ -32,6 +32,7 @@
 <style scoped>
     .main-products-wrapper{
         display: flex;
+        flex-wrap: wrap;
     }
     .filter-btn{
         margin: 20px 0;
