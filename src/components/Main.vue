@@ -13,7 +13,7 @@
 
     <div class="products-section">
         <h3>Sort by:</h3>
-        <select name="filter-options" id="shopping">
+        <select name="filter-options" id="shopping" v-model="sorting_method">
             <option value="a-z">Alphabetically: A-Z</option>
             <option value="z-a">Alphabetically: Z-A</option>
             <option value="low-high">Price: Low to high</option>
@@ -22,7 +22,7 @@
 
         <div class="main-products-wrapper">
             <ProductVue 
-            v-for="product in products_prop_array"
+            v-for="product in sortedProducts"
             :single_product_obj="product"
             />
         </div>
@@ -74,27 +74,56 @@
     export default {
         data(){
             return{
-                sortby: 'a-z'
+                sorting_method:'a-z'
             }
         },
 
         computed: {
             sortedProducts(){
-                return this.products_prop_array.product.sort((a,b) =>{
-                    const nameA = a.products_prop_array.product.name.toUpperCase();
-                    const nameB = b.products_prop_array.product.name.toUpperCase();
+                //is it a-z
+                if(this.sorting_method == 'a-z'){
+                    return this.products_prop_array.sort((a,b) =>{
+                        const nameA = a.name.toUpperCase();
+                        const nameB = b.name.toUpperCase();
 
-                    if(nameA < nameB){
-                        return -1;
-                    }
+                        if(nameA < nameB){
+                            return -1;
+                        }
 
-                    if (nameA > nameB){
-                        return 1;
-                    }
+                        if (nameA > nameB){
+                            return 1;
+                        }
 
-                    return 0
-                    }
-                )
+                        return 0
+                        }
+                    )
+                }
+                // is it z-a
+                if(this.sorting_method == 'z-a'){
+                    return this.products_prop_array.sort((a,b) =>{
+                        const nameA = a.name.toUpperCase();
+                        const nameB = b.name.toUpperCase();
+
+                        if(nameA < nameB){
+                            return 1;
+                        }
+
+                        if (nameA > nameB){
+                            return -1;
+                        }
+
+                        return 0
+                        }
+                    )
+                }
+                // is it low-high
+                if(this.sorting_method == 'low-high'){
+                    return this.products_prop_array.sort((a,b) => a.price-b.price)
+                }
+                // is it low-high
+                if(this.sorting_method == 'high-low'){
+                    return this.products_prop_array.sort((a,b) => b.price-a.price)
+                }
             }
         },
 
