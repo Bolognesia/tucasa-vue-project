@@ -3,7 +3,7 @@
         <h3>Filter</h3>
         <div class="filter-option">
             <div class="filter-btn">All</div>
-            <div class="filter-btn" @click="filteredProducts">Bedroom</div>
+            <div class="filter-btn" @click="filteredProducts()">Bedroom</div>
             <div class="filter-btn">Kitchen</div>
             <div class="filter-btn">Outdoor</div>
             <div class="filter-btn">Travel</div>
@@ -84,9 +84,10 @@
 
             filteredProducts(){
                 console.log(this.products_prop_array);
-                return this.products_prop_array.filter(
-                    (product) =>
-                    product.category.includes('Bedroom')
+                return this.products_prop_array
+                    .filter((product) =>
+                    console.log(product.category),
+                    product.category == 'Bedroom'
                 );
             },
 
