@@ -5,9 +5,9 @@
             <div class="view-more">View More</div>
         </div>
         <div class="product-description-wrapper">
-            <h2>{{ single_product_obj.name }}</h2>
+            <h2 class="product-name">{{ single_product_obj.name }}</h2>
             <h3><span>$</span>{{ single_product_obj.price }}</h3>
-            <p>{{ single_product_obj.description }}</p>
+            <p class="product-description">{{ single_product_obj.description }}</p>
         </div>
     </div>
 </template>
@@ -26,20 +26,25 @@
 }
 
 .view-more{
-        background-color: rgba(158, 73, 79, 1);
-        color: rgba(243, 242, 234, 1);
-        font-family: 'Lato', sans-serif;
-        padding: 15px 40px;
-        width: clamp(30px, 50vw, 80px);
-        text-align: center;
-        border-radius: 5px;
-        position: absolute;
-        bottom: 40%;
-        left: 25%;
-        font-size: 17px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: clip;
+    background-color: rgba(158, 73, 79, 1);
+    color: rgba(243, 242, 234, 1);
+    font-family: 'Lato', sans-serif;
+    padding: 15px 40px;
+    width: clamp(30px, 50vw, 80px);
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40%;
+    left: 25%;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.view-more:hover{
+    background-color: rgba(243, 242, 234, 1);
+    color: rgba(158, 73, 79, 1);
+    border: 2px solid rgba(158, 73, 79, 1);
+    cursor: pointer;
 }
 .product-description-wrapper{
     max-height: 300px;
@@ -56,6 +61,17 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.product-description{
+    max-height: 110px;
+    overflow:hidden;
+}
+
+.product-name{
+    max-height: 90px;
+    min-height: 90px;
+    overflow: hidden;
 }
 
 

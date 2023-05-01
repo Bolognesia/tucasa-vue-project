@@ -3,9 +3,8 @@
         <h3>Filter</h3>
         <div class="filter-option">
             <div class="filter-btn">All</div>
-            <div class="filter-btn">Bedroom</div>
+            <div class="filter-btn" @click="filteredProducts">Bedroom</div>
             <div class="filter-btn">Kitchen</div>
-            <div class="filter-btn">Electrical</div>
             <div class="filter-btn">Outdoor</div>
             <div class="filter-btn">Travel</div>
         </div>
@@ -13,7 +12,7 @@
 
     <div class="products-section">
         <h3>Sort by:</h3>
-        <select name="filter-options" id="shopping" v-model="sorting_method">
+        <select name="filter-options" v-model="sorting_method">
             <option value="a-z">Alphabetically: A-Z</option>
             <option value="z-a">Alphabetically: Z-A</option>
             <option value="low-high">Price: Low to high</option>
@@ -25,7 +24,10 @@
             v-for="product in sortedProducts"
             :single_product_obj="product"
             />
+
         </div>
+
+      
     </div>
 </template>
 
@@ -74,59 +76,75 @@
     export default {
         data(){
             return{
-                sorting_method:'a-z'
+                sorting_method:'a-z',
             }
         },
 
         computed: {
+
+            filteredProducts(){
+                console.log(this.products_prop_array);
+                return this.products_prop_array.filter(
+                    (product) =>
+                    product.category.includes('Bedroom')
+                );
+            },
+
             sortedProducts(){
                 //is it a-z
                 if(this.sorting_method == 'a-z'){
-                    return this.products_prop_array.sort((a,b) =>{
-                        const nameA = a.name.toUpperCase();
-                        const nameB = b.name.toUpperCase();
+                    return this.products_prop_array
+                        .sort((a,b) =>{
+                            const nameA = a.name.toUpperCase();
+                            const nameB = b.name.toUpperCase();
 
-                        if(nameA < nameB){
-                            return -1;
-                        }
+                            if(nameA < nameB){
+                                return -1;
+                            }
 
-                        if (nameA > nameB){
-                            return 1;
-                        }
+                            if (nameA > nameB){
+                                return 1;
+                            }
 
-                        return 0
-                        }
-                    )
+                            return 0
+                            }
+                        )
+
+         
                 }
                 // is it z-a
                 if(this.sorting_method == 'z-a'){
-                    return this.products_prop_array.sort((a,b) =>{
-                        const nameA = a.name.toUpperCase();
-                        const nameB = b.name.toUpperCase();
+                    return this.products_prop_array
+                        .sort((a,b) =>{
+                            const nameA = a.name.toUpperCase();
+                            const nameB = b.name.toUpperCase();
 
-                        if(nameA < nameB){
-                            return 1;
-                        }
+                            if(nameA < nameB){
+                                return 1;
+                            }
 
-                        if (nameA > nameB){
-                            return -1;
-                        }
+                            if (nameA > nameB){
+                                return -1;
+                            }
 
-                        return 0
-                        }
-                    )
+                            return 0
+                            }
+                        )
                 }
                 // is it low-high
                 if(this.sorting_method == 'low-high'){
-                    return this.products_prop_array.sort((a,b) => a.price-b.price)
+                    return this.products_prop_array
+                        .sort((a,b) => a.price-b.price)
                 }
+
                 // is it low-high
                 if(this.sorting_method == 'high-low'){
-                    return this.products_prop_array.sort((a,b) => b.price-a.price)
+                    return this.products_prop_array
+                        .sort((a,b) => b.price-a.price)
                 }
-            }
+            },
         },
 
-}
+    }
 
 </script>

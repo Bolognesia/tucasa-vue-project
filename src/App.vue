@@ -71,7 +71,7 @@ hr{
           .categories-flex{
               display: flex;
               flex-direction: column;
-              background-color: blue;
+              /* background-color: blue; */
           }
     }
 </style>
@@ -115,52 +115,52 @@ hr{
           },
 
           {
-            name:'Galaxy 1000GSM Microfibre Mattress Topper',
+            name:'Galaxy 1000GSM Microfibre Mattress TopperGalaxy 1000GSM',
             img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1098416/1098416_default_1.jpg/CatalogContentDetails-768615-600-600-75-0,0',
             category: 'Bedding',
             price: 80,
             description: 'The ultimate in microfibre comfort. For a cloud like nights sleep this topper will not disappoint with its lofty cushion of comfort that will leave you waking refreshed in the morning.',
           },
 
-          // {
-          //   name:'',
-          //   img: '',
-          //   category: '',
-          //   price: '',
-          //   description: '',
-          // },
+          {
+            name:'Hampton & Mason Impact Pro 3Pce Saucepan Set',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1055433_00/1055433_00_default_1.jpg/CatalogContentDetails-125521-600-600-75-0,0',
+            category: 'Kitchen',
+            price: 99,
+            description: 'Made from 18/4 Stainless Steel the Hampton & Mason Impact Pro Saucepan Set has vented tempered glass lids, soft rubberised cool touch handle & knob for easy handling and is suitable for all cooktops including induction.',
+          },
 
-          // {
-          //   name:'',
-          //   img: '',
-          //   category: '',
-          //   price: '',
-          //   description: '',
-          // },
+          {
+            name:'Nespresso Pop Blue Bundle Coffee Machine ENV90AAE',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1105837_prod_default_1.jpg/CatalogContentDetails-1410925-600-600-75-0,0',
+            category: 'Kitchen',
+            price: 389,
+            description: 'Standing at 25 cm, Vertuo Pop makes a big statement by going small. One button is enough to activate the best in every cup. Each capsule is analysed thanks to a code to finely adjust brewing parameters. The centrifusion extraction system then enhance the aromas of each blend. Espresso, double espresso, gran lungo, mug… Get ready to be spoiled for choice.',
+          },
 
-          // {
-          //   name:'',
-          //   img: '',
-          //   category: '',
-          //   price: '',
-          //   description: '',
-          // },
+          {
+            name:'Outdoor Creations Eiffel Outdoor Setting 3 Piece',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1104209_00/1104209_00_default_1.jpg/CatalogContentDetails-1243886-600-600-75-0,0',
+            category: 'Outdoor',
+            price: '1999',
+            description: 'Aluminium 3Pce Bistro Setting from Outdoor Creations. Luxurious finish with high quality 200g Olefin fabric for extra comfort & durability. Powder coated alumiun construction. Polyester fibre fill with chair 10cm thick padding & back rest 15cm thick Wicker Rope sides. Chairs 81cm H x 66cm x 76cm. Side table 46cm x 46cm x 48cm H. Arm rests and slat table top made of wood look resin which wont fade crack or split. Comes in one carton 68 x 64 x 76cm. Grosss weight 24kg. Comes ready to assemble. Always remove cushions and store in a dry area out of the sun when not in use. Wash frame with mild soap and water and rise thoroughly and dry completely. Do not use bleach, acid or other solvents.',
+          },
 
-          // {
-          //   name:'',
-          //   img: '',
-          //   category: '',
-          //   price: '',
-          //   description: '',
-          // },
+          {
+            name:'Milano Outdoor 3 Meter Hanging and Folding Umbrella Beige',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1106103_00/1106103_00_default_1.jpg/CatalogContentDetails-1365080-600-600-75-0,0',
+            category: 'Outdoor',
+            price: '299',
+            description: 'Deck out your outdoor space in style with the Outdoor 3-Metre Umbrella with Bonus Protective Cover, designed by Milano Decor!The umbrella features a durable 160GSM polyester fabric cover that extends to a maximum of 3 metres in diameter and 2.5 metres in height.It utilises a cantilevered side-post design which ensures the maximum useable space in the shade and eliminates the concept of a traditional central pole.The fabric cover is both UV and weather resistant. The umbrella’s frame is constructed from steel that is powder-coated to ensure longevity.',
+          },
 
-          // {
-          //   name:'',
-          //   img: '',
-          //   category: '',
-          //   price: '',
-          //   description: '',
-          // },
+          {
+            name:'Char-Broil Professional TRU-Infrared 4-Burner BBQ 4400B',
+            img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096911_00/1096911_00_default_1.jpg/CatalogContentDetails-1366262-600-600-75-0,0',
+            category: 'Outdoor',
+            price: '1399',
+            description: '4 burner gas BBQ.TRU-Infrared™ cooking technology with five key benefits: up to 50% juicier food, 100% even heat distribution, no flare-ups, easy cleaning, up to 30% more economical fuel consumption.Black double-skinned ‘cold-rolled’ vitreous enamel roasting hood with pressed steel end caps for maximum heat retention.',
+          },
 
           // {
           //   name:'',
