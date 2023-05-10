@@ -1,5 +1,5 @@
 <template>
-    <div class="filter-section">
+    <!-- <div class="filter-section">
         <h3>Filter</h3>
         <div class="filter-option">
             <div class="filter-btn">All</div>
@@ -8,7 +8,7 @@
             <div class="filter-btn">Outdoor</div>
             <div class="filter-btn">Travel</div>
         </div>
-    </div>
+    </div> -->
 
     <div class="products-section">
         <h3>Sort by:</h3>
